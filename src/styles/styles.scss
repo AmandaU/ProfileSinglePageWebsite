@@ -1,0 +1,226 @@
+@import 'colors';
+$theme-font:  verdana, sans-serif;
+
+@font-face {
+  font-family: Bariol;
+  src: url("~@/assets/fonts/Bariol.otf") ;
+
+  font-family: BariolBold;
+  src: url("~@/assets/fonts/BariolBold.otf") ;
+}
+
+  #app {
+  margin:0;     /* This is used to reset any browser-default margins */
+  height:100vh; /* This is needed to overcome a Chrome bug. */
+  width:100vw; 
+  font-family: 'Bariol', 'BariolBold';//,'Helvetica Neue', Arial, sans-serif;
+  color: rgb(231, 43, 43);
+  background-color: #f8f5f7;
+  -webkit-font-smoothing: antialiased;
+  max-width: 100%;
+  max-height: 100%;
+  
+    max-width: 100%;
+    max-height: 100%;
+   
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: auto;
+    -webkit-scrollbar { 
+      display: none; 
+  }
+  }
+
+  body.noScroll { /* ...or body.dialogShowing */
+    overflow: hidden;
+  }
+
+  body {
+    max-width: 100%;
+    max-height: 100%;
+    overflow: hidden;
+    // overflow-x: hidden;
+    // overflow-y: hidden;
+    -webkit-scrollbar { 
+      display: none; 
+    }
+
+  .photocontainer {
+        height:100vh;
+      width:100vw;
+        background:rgb(252, 250, 249);
+        float:right;
+        overflow-y: auto;
+      }
+
+  /* As above. */
+  font: $theme-font;
+  background-color: $themeColor-Light;
+  
+  h1, h2 {
+    //font-family: BariolBold;
+    font-weight: 600;
+    color: $themeColor-Dark;
+  }
+  ul {
+    list-style-type:none;
+   // padding: 20;
+  }
+  li {
+    display: flex;
+    justify-content:center;
+    align-content:center;
+    flex-direction:column; /* column | row */
+}
+  a {
+    color: $themeColor-Green;
+  }
+  #parent {display: table;}
+
+  .child {
+      display: table-cell;
+      vertical-align: middle;
+  }
+
+//Main body Image gallery
+.cols{
+  -moz-column-count:3;
+  -moz-column-gap: 0px;
+  -webkit-column-count:3;
+  -webkit-column-gap: 0px;
+  column-count: 3;
+  column-gap: 0px;
+
+}
+
+@media all and (max-width: 800px) {
+  .cols{
+    -moz-column-count:2;
+    -webkit-column-count:2;
+    column-count: 2;
+    }
+}
+
+@media all and (max-width: 600px) {
+  .cols{
+    -moz-column-count:1;
+       -webkit-column-count:1;
+       column-count: 1;
+    
+  }
+}
+
+
+//Hover
+.hvrbox,
+.hvrbox * {
+	box-sizing: border-box;
+}
+.hvrbox {
+	position: relative;
+	display: inline-block;
+	overflow: hidden;
+	max-width: 100%;
+  height: auto;
+  vertical-align: top;
+}
+.hvrbox img {
+  max-width: 100%;
+  vertical-align: middle;
+  -webkit-transition-property: left,right,top;
+  -moz-transition-property: left,right,top;
+  -ms-transition-property: left,right,top;
+  -o-transition-property: left,right,top;
+  transition-property: left,right,top;
+  -webkit-transition-duration: 0.6s;
+  -moz-transition-duration: 0.6s;
+  -ms-transition-duration: 0.6s;
+  -o-transition-duration: 0.6s;
+  transition-duration: 0.6s;
+
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+.hvrbox .hvrbox-layer_bottom {
+  display:  block; 
+}
+.hvrbox .hvrbox-layer_top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.6);
+	color: #fff;
+	padding: 15px;
+	-moz-transition: all 0.4s ease-in-out 0s;
+	-webkit-transition: all 0.4s ease-in-out 0s;
+	-ms-transition: all 0.4s ease-in-out 0s;
+	transition: all 0.4s ease-in-out 0s;
+}
+.hvrbox:hover .hvrbox-layer_top,
+.hvrbox.active .hvrbox-layer_top {
+	opacity: 1;
+}
+
+.hvrbox .hvrbox-text {
+  list-style: none;
+	text-align: center;
+	font-size: 18px;
+	display: inline-block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-moz-transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+.hvrbox .hvrbox-text_mobile {
+	font-size: 15px;
+	border-top: 1px solid rgb(179, 179, 179); /* for old browsers */
+	border-top: 1px solid rgba(179, 179, 179, 0.7);
+	margin-top: 5px;
+	padding-top: 2px;
+	display: none;
+}
+.hvrbox.active .hvrbox-text_mobile {
+	display: block;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+// strong {
+//   font-weight: 600;
+// }
+
+// .info {
+//   position: absolute;
+//   top: 50%; left: 50%;
+//   transform: translateX(-50%);
+//   text-align: center;
+// }
+
+// .title {
+//   font-size: 24px;
+//   font-weight: 600;
+// }
+
+// .description {
+//   margin-top: 20px;
+// }
+
+}
