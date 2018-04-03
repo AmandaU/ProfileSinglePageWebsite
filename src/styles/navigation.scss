@@ -1,7 +1,7 @@
 .fullpage {
     height:100vh;
     width:100vw;
-       top: 0;
+    top: 0;
     bottom: 0;
     left: 0;
     right: 0;
@@ -65,9 +65,9 @@
 
   .horizontalnavigation  a{
     transform-origin:0 50%;
-    transform:rotate(-90deg) translate(-100%, 110%);
+    transform:rotate(-90deg) translate(-150%, 110%);
     position:absolute;
-    //top:0;
+    top:0;
     bottom:0;
     white-space:nowrap;
      display:block;
@@ -85,7 +85,6 @@
    
     }
 
-
 .navigation  a {
   text-decoration: none;
    padding: 1em;
@@ -96,7 +95,6 @@
      text-decoration: underline;
  }
 
- 
 
 @media all and (max-width: 800px) {
 
@@ -107,7 +105,6 @@
   .horizontalnavigation {
     a { 
       
-
       transform: translateY(-10%);
         vertical-align: middle;
         line-height: 20px; 
@@ -116,10 +113,10 @@
         // border-top: 1px solid rgba(255,255,255,0.3); 
         // border-bottom: 1px solid rgba(0,0,0,0.1); 
 
-           transition: transform 0.6s ease(out-cubic);
-    -moz-transform: transform 0.6s ease(out-cubic);
-    -webkit-transform:transform 0.6s ease(out-cubic);
-    -ms-transform: transform 0.6s ease(out-cubic);
+      transition: transform 0.6s ease(out-cubic);
+      -moz-transform: transform 0.6s ease(out-cubic);
+      -webkit-transform:transform 0.6s ease(out-cubic);
+      -ms-transform: transform 0.6s ease(out-cubic);
     }
   }
  
