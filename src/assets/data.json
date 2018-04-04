@@ -149,7 +149,7 @@
         "projectlink" : "/project/project8",
         "splurb" : ["My mom is great ",
             "kjvkjhdfvkj",
-            "a href='http://www.google.com'>leo</a>",
+            "<a href='http://www.google.com'>leo</a>",
             "blah de blah de blah"
         ]
       } 

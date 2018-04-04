@@ -65,7 +65,7 @@
 
   .horizontalnavigation  a{
     transform-origin:0 50%;
-    transform:rotate(-90deg) translate(-150%, 110%);
+    transform:rotate(-90deg) translate(-200%, 110%);
     position:absolute;
     top:0;
     bottom:0;
@@ -77,7 +77,7 @@
 
     .horizontalnavigation li{
       display:inline-block;
-      height:150px;;
+      height:auto;
       width: 40px;
      position: relative;
      font-weight: 500;
@@ -100,6 +100,9 @@
 
   .horizontalnavigation {
     justify-content: space-around;
+    padding-top:50px;
+    flex-flow: column;
+   height: 15%;
   }
 
   .horizontalnavigation {
@@ -126,8 +129,9 @@
   
  .horizontalnavigation 
 {
+  padding-top:50px;
   flex-flow: column;
-  height: 20%;
+  height: 15%;
 }
  
   .horizontalnavigation {
@@ -135,9 +139,9 @@
       transform-origin:0 0%;
       transform:rotate(0deg) translate(0%, 0%);
         vertical-align: middle;
-        line-height: 20px; 
+        line-height: 10px; 
         text-align: center; 
-        padding: 10px;
+        padding:0px;
         transition: transform 0.6s ease(out-cubic);
         -moz-transform: transform 0.6s ease(out-cubic);
         -webkit-transform:transform 0.6s ease(out-cubic);

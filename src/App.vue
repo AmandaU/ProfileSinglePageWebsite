@@ -10,7 +10,7 @@
     
     <div class="navigation horizontalnavigation">
        
-          <li ><router-link to="/">Home         </router-link></li>
+          <li ><router-link to="/">Home </router-link></li>
           <li ><router-link to="/jade">About me</router-link></li>
           <li ><router-link to="/contact">Contact Me</router-link></li>
       </div>
