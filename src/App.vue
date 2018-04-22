@@ -7,14 +7,24 @@
       </div>
        <router-view></router-view>
     </div>
-    
-    <div class="navigation horizontalnavigation">
-       
-          <li ><router-link to="/">Home </router-link></li>
-          <li ><router-link to="/jade">About me</router-link></li>
-          <li ><router-link to="/contact">Contact Me</router-link></li>
+    <div class="floatingmenu">
+      <div class="nav hnav">
+          <!-- <ul ><li><router-link to="/">+ | Projects</router-link> -->
+          <ul>
+            <li><div class="hitem" v-on:click="toggle()">+ | Projects</div></li>
+            <li  ><router-link  to="/jade">About</router-link></li>
+            <li  ><router-link  to="/contact">Contact</router-link></li>
+            </ul>
       </div>
 
+      <div class="nav vnav" v-show="isSubMenuOpen">
+            <ul ><li><div class="hitem" v-on:click="filterProjects('photography')">Photography</div>
+            </li><li> <div class="hitem" v-on:click="filterProjects('illustration')">Illustration</div>
+            </li><li> <div class="hitem" v-on:click="filterProjects('styling')">Styling</div>
+            </li></ul>
+      </div>
+    </div>
+      
   </div>
   
 </template>
@@ -27,8 +37,7 @@ export default {
   data () {
     return {
   
-    openerText: 'Open',
-    isOpen: false,
+    isSubMenuOpen: false,
     // menu: [
     //     {
     //       id: 1,
@@ -48,20 +57,24 @@ export default {
     }},
 
   methods: {
+
+     filterProjects (filter) {
+     this.$router.push(
+        {
+         path: link,
+        }
+     )
+ },
     open() {
-      this.openerText = 'Close';
-      this.isOpen = true;
+     
+      this.isSubMenuOpen = true;
     },
     close() {
-      this.openerText = 'Open';
-      this.isOpen = false;
+     
+      this.isSubMenuOpen = false;
     },
     toggle() {
-      if (this.isOpen) {
-        this.close();
-      } else {
-        this.open();
-      }
+      this.isSubMenuOpen = !this.isSubMenuOpen;
     }
   }
 }

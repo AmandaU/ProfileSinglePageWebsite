@@ -1,20 +1,5 @@
 <template>
  
-<!--div class="photocontainer">
-   
-    <div class="container cols">
-       <div class="hvrbox" v-bind:key="project.id" v-for="project in projects">
-           <img v-bind:src="project.linkphotourl" class="hvrbox-layer_bottom" >
-          <div class="hvrbox-layer_top">
-            <router-link class="hvrbox-text" tag="div" v-bind:to="project.projectlink" >
-                <a>{{project.projecttitle}}</a>
-                <a>{{project.projectsubtitle}}</a>
-            </router-link>
-        	</div>
-      </div>
-    </div>
- </div>-->
-
  <div class="photocontainer">
       <div class="container cols">
        <div class="hvrbox" v-bind:key="project.id" v-for="project in projects">
@@ -62,12 +47,12 @@ methods: {
     }
   }
 
- 
 }
 </script>
 
 <style lang="scss" scoped>
-  @import "~@/styles/styles.scss"
+  @import "~@/styles/styles.scss";
+   @import "~@/styles/containerstyles.scss"
 
 </style>
 

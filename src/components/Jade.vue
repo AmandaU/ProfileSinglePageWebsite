@@ -1,37 +1,28 @@
 
 
 <template>
-  <div class="jadea">
-         <h1>{{slogan}}</h1>
-    <h2>{{ designername }}</h2>
 
- <div class="scrollmenu">
-    <div  v-for="image in images" v-bind:key=image.id  >
-        <h1>{{ image.alt }}</h1>
-        <img  v-bind:src="image.url" width=80%  />
-        <p align=center><a v-bind:href="image.link" v-bind:target="_blank">{{ image.linktitle }}</a></p>
-        
-      </div>
-
+ <div class="page">
+    <div class="navcolumn">
+        <h1>{{ slogan }}</h1>
+        <h2>{{ designername }}</h2>
     </div>
 
-    <h2>Essential Links</h2>
-    <ul>
-      <li><a href="https://vuejs.org" target="_blank">Core Docs</a></li>
-      <li><a href="https://forum.vuejs.org" target="_blank">Forum</a></li>
-      <li><a href="https://chat.vuejs.org" target="_blank">Community Chat</a></li>
-      <li><a href="https://twitter.com/vuejs" target="_blank">Twitter</a></li>
+  <div class="aboutcontainer">
+    <div class="centeredcontainer">
+      <h1>Education</h1>
+      <p>I went to Star of The Sea Convent school in Kalk Bay for primary school. High school was the amazing <a href="https://wwww.cedarhouse.co.za" target="_blank">Cedar House</a>
+      <br>I got my BA Fashion Design at <a href="https://www.fedisa.co.za" target="_blank">Fedisa</a> in Cape Town
+      </p>
       <br>
-      <li><a href="http://vuejs-templates.github.io/webpack/" target="_blank">Docs for This Template</a></li>
-    </ul>
-    <h2>Ecosystem</h2>
-    <ul>
-      <li><a href="http://router.vuejs.org/" target="_blank">vue-router</a></li>
-      <li><a href="http://vuex.vuejs.org/" target="_blank">vuex</a></li>
-      <li><a href="http://vue-loader.vuejs.org/" target="_blank">vue-loader</a></li>
-      <li><a href="https://github.com/vuejs/awesome-vue" target="_blank">awesome-vue</a></li>
-    </ul>
+       <h1>Design Asthetic</h1>
+      <p>I am a flippin great designer and I dig cool stuff. I draw nicely too
+      <br> Cape Town is cool
+      </p>
+    </div>
+ 
   </div>
+   </div>
 </template>
 
 <script>
@@ -91,7 +82,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  @import "~@/styles/styles.scss"
+  @import "~@/styles/styles.scss";
+  @import "~@/styles/contactstyles.scss";
+   @import "~@/styles/containerstyles.scss";
  </style>
 
 

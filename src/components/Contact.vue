@@ -1,27 +1,31 @@
 <template>
   <div class="page">
     <div class="navcolumn">
-      
         <h1>{{ slogan }}</h1>
         <h2>{{ designername }}</h2>
-            
     </div>
 
   <div class="projectcontainer">
-       <div class="socialmedia">
+       <div class="verticalscrollcontainer">
+           <br>
 
-         <br>
-
-          <a target="_blank" title="follow me on Twitter" href="http://www.twitter.com/ursling">
+          <!--a target="_blank" title="follow me on Twitter" href="http://www.twitter.com/ursling">
           <img alt="follow me on twitter" src="https://c866088.ssl.cf3.rackcdn.com/assets/twitter40x40.png" border=0>
           </a>
         <br>
-
           <a target="_blank" title="follow me on youtube" href="http://www.youtube.com/PLACEHOLDER">
           <img alt="follow me on youtube" src="https://c866088.ssl.cf3.rackcdn.com/assets/youtube40x40.png" border=0>
+          </a>-->
+          
+           <h2>To make contact with me, please email me at <a :href="`mailto:ayla.jade@gmail.com`">ayla.jade@gmail.com</a> </h2>
+           <br>
+            <h2>or call me on <a href="tel:0828391629">0828391629</a> </h2>
+            <br>
+          <a target="_blank" title="follow me on instagram" href="http://www.instagram.com/urslingz">
+          <img alt="follow me on instagram" src="https://c866088.ssl.cf3.rackcdn.com/assets/instagram40x40.png" border=0>
           </a>
          <br>
-
+          <h2>Follow me on Instagram</h2>
           <a target="_blank" title="follow me on instagram" href="http://www.instagram.com/urslingz">
           <img alt="follow me on instagram" src="https://c866088.ssl.cf3.rackcdn.com/assets/instagram40x40.png" border=0>
           </a>
@@ -107,5 +111,5 @@ created: function () {
 <style lang="scss" scoped>
   @import "~@/styles/styles.scss";
    @import "~@/styles/contactstyles.scss";
-   @import "~@/styles/leftbarstyles.scss";
+   @import "~@/styles/containerstyles.scss";
  </style>

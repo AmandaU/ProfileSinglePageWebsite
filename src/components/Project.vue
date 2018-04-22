@@ -67,7 +67,7 @@ created: function () {
 
 <style lang="scss" scoped>
   @import "~@/styles/styles.scss";
-   @import "~@/styles/leftbarstyles.scss";
+   @import "~@/styles/containerstyles.scss";
  </style>
 
 

@@ -17,12 +17,8 @@ $theme-font:  verdana, sans-serif;
   color: rgb(231, 43, 43);
   background-color: #f8f5f7;
   -webkit-font-smoothing: antialiased;
-  max-width: 100%;
+   max-width: 100%;
   max-height: 100%;
-  
-    max-width: 100%;
-    max-height: 100%;
-   
     position: absolute;
     top: 0;
     bottom: 0;
@@ -32,38 +28,11 @@ $theme-font:  verdana, sans-serif;
     -webkit-scrollbar { 
       display: none; 
   }
-  }
-
-  body.noScroll { /* ...or body.dialogShowing */
-    overflow: hidden;
-  }
-
-  body {
-    max-width: 100%;
-    max-height: 100%;
-    overflow: hidden;
-    // overflow-x: hidden;
-    // overflow-y: hidden;
-    -webkit-scrollbar { 
-      display: none; 
-    }
-
-  .photocontainer {
-        height:100vh;
-      width:100vw;
-        background:rgb(252, 250, 249);
-        float:right;
-        overflow-y: auto;
-      }
-
-  /* As above. */
-  font: $theme-font;
-  background-color: $themeColor-Light;
   
   h1, h2 {
     //font-family: BariolBold;
     font-weight: 600;
-    color: $themeColor-Dark;
+    color: rgb(36, 31, 29);
   }
   ul {
     list-style-type:none;
@@ -71,20 +40,12 @@ $theme-font:  verdana, sans-serif;
   }
   li {
     display: flex;
-    justify-content:center;
-    align-content:center;
+  //   justify-content:left;
+  //  align-content:left;
     flex-direction:column; /* column | row */
 }
-  a {
-    color: $themeColor-Green;
-  }
-  #parent {display: table;}
 
-  .child {
-      display: table-cell;
-      vertical-align: middle;
-  }
-
+ 
 //Main body Image gallery
 .cols{
   -moz-column-count:3;
@@ -112,7 +73,6 @@ $theme-font:  verdana, sans-serif;
     
   }
 }
-
 
 //Hover
 .hvrbox,
@@ -198,29 +158,9 @@ $theme-font:  verdana, sans-serif;
 	display: block;
 }
 
-
 * {
   box-sizing: border-box;
 }
 
-// strong {
-//   font-weight: 600;
-// }
-
-// .info {
-//   position: absolute;
-//   top: 50%; left: 50%;
-//   transform: translateX(-50%);
-//   text-align: center;
-// }
-
-// .title {
-//   font-size: 24px;
-//   font-weight: 600;
-// }
-
-// .description {
-//   margin-top: 20px;
-// }
 
 }

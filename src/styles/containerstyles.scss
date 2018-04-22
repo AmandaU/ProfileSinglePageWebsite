@@ -3,6 +3,47 @@
   height:100%;
   //background:rgb(171, 198, 238);
 }
+
+.photocontainer {
+  height:100vh;
+  width:100vw;
+  background:rgb(252, 250, 249);
+  float:right;
+  overflow-y: auto;
+}
+
+
+.verticalscrollcontainer{
+  width: 100%;
+  display:inline-flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  }
+
+  .aboutcontainer {
+    height:100%;
+    width:80vw;
+    background:rgb(241, 232, 236);
+    float:right;
+  }
+
+  .centeredcontainer{
+    padding: 20px;
+    margin-left:auto;
+    margin-right:auto;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    background:rgb(241, 232, 236);
+    
+    }
+
 .projectcontainer {
     height:100%;
     width:80vw;
@@ -26,21 +67,19 @@
     -moz-row-gap: 0px;
     -webkit-row-count:1;
     -webkit-row-gap: 0px;
-  
-  }
+    }
  
   .imagebox {
-        // position: fixed;
+    // position: fixed;
     top: 0;
     display: inline-block;
     overflow: hidden;
     max-width: 100%;
     height: auto;
     vertical-align: top;
-  }
+}
 
   .navcolumn {
-   
     padding: 10px;
     padding-left: 2%;
     padding-top: 20%;
@@ -51,8 +90,7 @@
     vertical-align: middle;
     text-align: right;
     top: 0%;
-    
-  }
+    }
 
   .navcolumn  p {
     padding-top: 10%;
@@ -67,10 +105,20 @@
     text-align: center;
   }
 
-  
-
   @media all and (max-width: 600px) {
 
+    .aboutcontainer {
+      height:100%;
+      width:100vw;
+      background:rgb(250, 248, 51);
+    
+    }
+  
+    .centeredcontainer{
+  
+      width: 100%;
+      
+      }
     .projectcontainer {
       height:auto;
       width:100vw;
