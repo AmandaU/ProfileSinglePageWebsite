@@ -26,7 +26,7 @@
     position: absolute ;
     width: auto;
     height: auto;
-    top: 10%;
+    top: 8%;
     left:10%;
     }
 
@@ -49,6 +49,7 @@
      
   }
 
+
   .hnav{
     justify-content: start;
     -webkit-transform: rotate(-90deg);
@@ -63,7 +64,7 @@
     justify-content: center;
     //background-color:   rgb(120, 92, 247);
   //   transform-origin:0 0%;
-    transform:translate(0%, -20%);
+    transform:translate(0%, -25%);
 
   }
 
@@ -92,13 +93,24 @@
         text-decoration: underline;
         cursor: pointer;
       }
-      :hover {
-        text-decoration: underline;
-        cursor: pointer;
     }
+.hoveritem {
+  background-color:transparent;
+}
+
+.hoveritem:hover {
+  text-decoration:underline;
+  cursor: pointer;
+  }
+  
+  .allitem{
+    display: flex;
+    flex-direction:row; 
+    float: left;
   }
    
   .hitem{
+
     color: rgb(51, 47, 47);
      position:relative;
     text-align: left;
@@ -106,6 +118,15 @@
     align-content:left;
     padding: 0px;
     margin: 0px;
+
+      :hover {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+  }
+  .hitem:hover {
+    text-decoration:underline;
+    cursor: pointer;
     }
 
 
@@ -124,18 +145,18 @@
     .hnav
     {
        justify-content:center;
-      -webkit-transform: rotate(0deg);
-      -moz-transform: rotate(0deg);
-      -o-transform: rotate(0deg);
-      -ms-transform: rotate(0deg);
-      transform: rotate(0deg);
+      // -webkit-transform: rotate(0deg);
+      // -moz-transform: rotate(0deg);
+      // -o-transform: rotate(0deg);
+      // -ms-transform: rotate(0deg);
+      // transform: rotate(0deg);
     }
     
     .floatingmenu{
         position: absolute ;
         width: 100vw;
         height: auto;
-        top: 5%;
+        top: 8%;
         left:0%;
        right:0%;
       }
@@ -158,18 +179,18 @@
  .hnav
 {
     justify-content:center;
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    transform: rotate(0deg);
+    // -webkit-transform: rotate(0deg);
+    // -moz-transform: rotate(0deg);
+    // -o-transform: rotate(0deg);
+    // -ms-transform: rotate(0deg);
+    // transform: rotate(0deg);
 }
 
 .floatingmenu{
     position: absolute ;
     width: 100vw;
     height: auto;
-    top: 5%;
+    top: 8%;
     left:0%;
     right:0%;
   }

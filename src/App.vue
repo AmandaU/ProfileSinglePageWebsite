@@ -9,14 +9,16 @@
     </div>
     <div class="floatingmenu">
       <div class="nav hnav">
-          <!-- <ul ><li><router-link to="/">+ | Projects</router-link> -->
-          <ul>
-            <li><div class="hitem" v-on:click="toggle()">+ | Projects</div></li>
-            <li  ><router-link  to="/jade">About</router-link></li>
-            <li  ><router-link  to="/contact">Contact</router-link></li>
-            </ul>
+         <ul>
+              <li><div class="allitem">
+                  <div class="hoveritem" v-on:click="toggle()">+ | </div>
+                  <div class="hoveritem" v-on:click="showAll()">  Projects</div>
+               </div>
+              </li>
+            <li v-on:click="close()" ><router-link  to="/jade">About</router-link></li>
+            <li v-on:click="close()"  ><router-link  to="/contact">Contact</router-link></li>
+          </ul>
       </div>
-
       <div class="nav vnav" v-show="isSubMenuOpen">
             <ul ><li><div class="hitem" v-on:click="filterProjects('photography')">Photography</div>
             </li><li> <div class="hitem" v-on:click="filterProjects('illustration')">Illustration</div>
@@ -75,6 +77,14 @@ export default {
     },
     toggle() {
       this.isSubMenuOpen = !this.isSubMenuOpen;
+    },
+
+     showAll() {
+      this.$router.push(
+        {
+         path: "/"
+        }
+     )
     }
   }
 }
