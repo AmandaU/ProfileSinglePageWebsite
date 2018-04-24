@@ -1,6 +1,24 @@
 [ 
     {
-     "projectid": "project1",
+        "projectid": "project1",
+      "projecttitle" : "Eden Experience",
+      "clientwebsite" : "www.edenexperience.co.za",
+      "projectsubtitle" : "The festival project",
+      "id" : 2,
+      "linkphotourl" : "./src/assets/EDEN APRIL poster-03.png",
+      "photos" : [
+        {
+            "id": "1",
+            "url": "./src/assets/EDEN APRIL poster-03.png",
+            "alt": ""
+        }
+       ],
+      "projectlink" : "/project/project2",
+      "splurb" : ["blah blah",
+       " <a href='http://www.google.com'>Eden</a>  blah"]
+    } ,
+    {
+     "projectid": "project2",
       "projecttitle" : "Faithless",
       "clientwebsite" : "www.youngandlazy.co.za",
       "projectsubtitle" : "The Faithless SA Tour",
@@ -17,25 +35,8 @@
       "splurb" : ["This was my very first project that I am very proud of.",
         " I collaborated with  <a href='http://www.google.com'>Faithless</a>",
       "shown by Not Seen for The Young N Lazee"]
-    }, {
-        "projectid": "project2",
-      "projecttitle" : "Eden Experience",
-      "clientwebsite" : "www.edenexperience.co.za",
-      "projectsubtitle" : "The festival project",
-      "id" : 2,
-      "linkphotourl" : "./src/assets/EDEN APRIL poster-03.png",
-      "photos" : [
-        {
-            "id": "1",
-            "url": "./src/assets/EDEN APRIL poster-03.png",
-            "alt": ""
-        }
-       ],
-      "projectlink" : "/project/project2",
-      "splurb" : ["blah blah",
-       " <a href='http://www.google.com'>Eden</a>  blah"]
-    } 
-    , {
+    }, 
+    {
         "projectid": "project3",
         "projecttitle" : "Fiction",
         "clientwebsite" : "www.edenexperience.co.za",

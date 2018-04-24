@@ -40,22 +40,7 @@ export default {
     return {
   
     isSubMenuOpen: false,
-    // menu: [
-    //     {
-    //       id: 1,
-    //       linktitle: "Home",
-    //        routerlink: "/ "
-    //      },
-    //      {
-    //       id: 2,
-    //       linktitle: "PR",
-    //        routerlink: "/jade "
-    //       },
-    //       {
-    //       id: 3,
-    //        linktitle: "Contact me",
-    //        routerlink: "/contact "
-    //       }]
+    
     }},
 
   methods: {

@@ -46,9 +46,7 @@
     margin: 0px;
     overflow: hidden;
     flex-flow: nowrap;
-     
   }
-
 
   .hnav{
     justify-content: start;
@@ -62,9 +60,7 @@
 
   .vnav{
     justify-content: center;
-    //background-color:   rgb(120, 92, 247);
-  //   transform-origin:0 0%;
-    transform:translate(0%, -25%);
+    // transform:translate(0%, 0%);
 
   }
 
