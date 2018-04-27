@@ -4,6 +4,9 @@
  import App from './App'
 import router from './router'
 import VueFire from 'vuefire'
+import VueVisible from 'vue-visible';
+
+Vue.use(VueVisible);
 
 Vue.use(VueFire)
 

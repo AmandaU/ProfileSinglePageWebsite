@@ -1,6 +1,26 @@
 [ 
     {
         "projectid": "project1",
+        "projecttitle" : "UK Boy",
+        "clientwebsite" : "www.edenexperience.co.za",
+        "projectsubtitle" : "Uk Boy",
+        "id" : 5,
+        "linkphotourl" : "./src/assets/IMG_2595.JPG",
+        "photos" : [
+          {
+              "id": "1",
+              "url": "./src/assets/IMG_2595.JPG",
+              "alt": ""
+          }
+         ],
+        "projectlink" : "/project/project5",
+        "splurb" : ["blah b;ah blah ",
+            "<a href='http://www.google.com'>UK boy</a>",
+            "my mom is great"
+        ]
+      } ,
+    {
+        "projectid": "project2",
       "projecttitle" : "Eden Experience",
       "clientwebsite" : "www.edenexperience.co.za",
       "projectsubtitle" : "The festival project",
@@ -17,25 +37,6 @@
       "splurb" : ["blah blah",
        " <a href='http://www.google.com'>Eden</a>  blah"]
     } ,
-    {
-     "projectid": "project2",
-      "projecttitle" : "Faithless",
-      "clientwebsite" : "www.youngandlazy.co.za",
-      "projectsubtitle" : "The Faithless SA Tour",
-      "id" : 1,
-      "linkphotourl" : "./src/assets/Faithless SA tour.png",
-      "photos" : [
-              {
-                  "id": "1",
-                  "url": "./src/assets/Faithless SA tour.png",
-                  "alt": ""
-              }
-             ],
-      "projectlink" : "/project/project1",
-      "splurb" : ["This was my very first project that I am very proud of.",
-        " I collaborated with  <a href='http://www.google.com'>Faithless</a>",
-      "shown by Not Seen for The Young N Lazee"]
-    }, 
     {
         "projectid": "project3",
         "projecttitle" : "Fiction",
@@ -72,28 +73,27 @@
             "<a href='http://www.google.com'>Generations</a>",
             "blah de blah de blah"
         ]
-      } 
-      , {
+      } ,
+      {
         "projectid": "project5",
-        "projecttitle" : "UK Boy",
-        "clientwebsite" : "www.edenexperience.co.za",
-        "projectsubtitle" : "Uk Boy",
-        "id" : 5,
-        "linkphotourl" : "./src/assets/IMG_2595.JPG",
-        "photos" : [
-          {
-              "id": "1",
-              "url": "./src/assets/IMG_2595.JPG",
-              "alt": ""
-          }
-         ],
-        "projectlink" : "/project/project5",
-        "splurb" : ["blah b;ah blah ",
-            "<a href='http://www.google.com'>UK boy</a>",
-            "my mom is great"
-        ]
-      } 
-      , {
+         "projecttitle" : "Faithless",
+         "clientwebsite" : "www.youngandlazy.co.za",
+         "projectsubtitle" : "The Faithless SA Tour",
+         "id" : 1,
+         "linkphotourl" : "./src/assets/Faithless SA tour.png",
+         "photos" : [
+                 {
+                     "id": "1",
+                     "url": "./src/assets/Faithless SA tour.png",
+                     "alt": ""
+                 }
+                ],
+         "projectlink" : "/project/project1",
+         "splurb" : ["This was my very first project that I am very proud of.",
+           " I collaborated with  <a href='http://www.google.com'>Faithless</a>",
+         "shown by Not Seen for The Young N Lazee"]
+       }, 
+        {
         "projectid": "project6",
         "projecttitle" : "Yun n Layzee",
         "clientwebsite" : "www.edenexperience.co.za",

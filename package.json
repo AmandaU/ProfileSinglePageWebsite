@@ -19,6 +19,7 @@
     "vue": "^2.5.16",
     "vue-router": "^3.0.1",
     "vue-swiper": "^0.5.0",
+    "vue-visible": "^1.0.2",
     "vuefire": "^1.4.5"
   },
   "devDependencies": {
