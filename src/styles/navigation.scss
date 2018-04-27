@@ -17,112 +17,67 @@
       padding-right: 20px;
      font-weight: 900;
      font-size: 24px;
-   
   }
 
-  .floatingmenu{
-    background-color:rgb(231, 43, 43);
-    position: absolute ;
-    width: auto;
-    height: 120px;
-    top: 0px;
+  .dropdownmenu {
+    height:120px;
+    width:120px;
+    text-align: right;
+    top: 20px;
     left:50px;
-    display: flex;
-    float: right;
-    flex-direction:column; 
-    }
+   font-weight: 600;
+   font-size: 20px;
+   display: flex;
+   float: left;
+   padding-top: 20px;
+   flex-direction:column; 
 
-  .nav{
-    background-color:rgb(43, 231, 68);
-    position: relative ;
-    list-style: none;
-    list-style-type: none;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    width:200px;
-    height: auto;
-    justify-content: center;
-    float: left;
-  }
+   -webkit-transform:  rotate(-90deg);
+   -moz-transform: rotate(-90deg);
+   -o-transform:  rotate(-90deg);
+   -ms-transform:  rotate(-90deg);
+   transform:  rotate(-90deg);
 
-  .hnav{
-    //  -webkit-transform: rotate(-90deg);
-    // -moz-transform: rotate(-90deg);
-    // -o-transform: rotate(-90deg);
-    // -ms-transform: rotate(-90deg);
-    // transform: rotate(-90deg);
-    }
-
-  .vnav{
-    justify-content: left;
-    text-align: left;
-    float: left;
-    transform:translate(-5%, -25%);
-  }
-
-  .nav  a{
-    background-color:rgb(231, 228, 43);
-    color: rgb(22, 20, 20);
-    text-decoration: none;
-      a:hover {
-        text-decoration: underline;
-        cursor: pointer;
-    }
- }
-
-   .nav  ul li {
-    background-color:rgb(43, 193, 231);
-      display: flex;
-      text-align:right;
-      justify-content:center;
-      align-content:center;
-      flex-direction:column; /* column | row */
-      text-decoration: none;
-        padding-right: 0px; 
-       margin-right: 0px;
-      position: relative;
-      font-weight: 500;
-      font-size: 24px;
-      color: rgb(22, 20, 20);
-      a:hover {
-        text-decoration: underline;
-        cursor: pointer;
-      }
-    }
-.hoveritem {
-  width: 100%;
-  //color: rgb(22, 20, 20);
-  background-color:transparent;
 }
 
-.hoveritem:hover {
-  text-decoration:underline;
-  cursor: pointer;
-  }
+
     
-  .hitem{
-    background-color:rgb(2, 14, 3);
-    color: rgb(240, 232, 232);
+  .hoveritem{
+    background-color:transparent;
+    color: rgb(26, 25, 25);
      position:relative;
     text-align: right;
     justify-content:center;
     align-content:center;
-    padding: 0px;
+    padding: 5px;
     margin: 0px;
     font-weight: 100;
     font-size: 20px;
 
-      :hover {
-        text-decoration: underline;
-        cursor: pointer;
-    }
   }
-  .hitem:hover {
+
+  .hoveritem:hover {
     text-decoration:underline;
     cursor: pointer;
     }
 
-  
+  .hoversubitem{
+   color: rgb(51, 50, 50);
+     padding-right: 15px;
+     margin:3px;
+    font-weight: 80;
+    font-size: 18px;
+   position:relative;
+    text-align: right;
+    justify-content:center;
+    align-content:center;
+   
+  }
+
+   .hoversubitem:hover {
+    text-decoration:underline;
+    cursor: pointer;
+    }
+
+ 
   
