@@ -4,7 +4,7 @@
         "projecttitle" : "UK Boy",
         "clientwebsite" : "www.edenexperience.co.za",
         "projectsubtitle" : "Uk Boy",
-        "id" : 5,
+        "id" : 1,
         "linkphotourl" : "./src/assets/IMG_2595.JPG",
         "photos" : [
           {
@@ -79,7 +79,7 @@
          "projecttitle" : "Faithless",
          "clientwebsite" : "www.youngandlazy.co.za",
          "projectsubtitle" : "The Faithless SA Tour",
-         "id" : 1,
+         "id" : 5,
          "linkphotourl" : "./src/assets/Faithless SA tour.png",
          "photos" : [
                  {

@@ -25,14 +25,15 @@
     position: absolute ;
     width: auto;
     height: 120px;
-    top: 15px;
+    top: 0px;
     left:50px;
     display: flex;
+    float: right;
     flex-direction:column; 
     }
 
   .nav{
-    background-color:rgb(43, 231, 68);;
+    background-color:rgb(43, 231, 68);
     position: relative ;
     list-style: none;
     list-style-type: none;
@@ -40,28 +41,29 @@
     display: -moz-box;
     display: -ms-flexbox;
     display: -webkit-flex;
-    width:auto;
+    width:200px;
     height: auto;
-    justify-content: right;
-    float: right;
+    justify-content: center;
+    float: left;
   }
 
   .hnav{
-     -webkit-transform: rotate(-90deg);
-    -moz-transform: rotate(-90deg);
-    -o-transform: rotate(-90deg);
-    -ms-transform: rotate(-90deg);
-    transform: rotate(-90deg);
+    //  -webkit-transform: rotate(-90deg);
+    // -moz-transform: rotate(-90deg);
+    // -o-transform: rotate(-90deg);
+    // -ms-transform: rotate(-90deg);
+    // transform: rotate(-90deg);
     }
 
   .vnav{
     justify-content: left;
-   text-align: left;
+    text-align: left;
     float: left;
     transform:translate(-5%, -25%);
   }
 
   .nav  a{
+    background-color:rgb(231, 228, 43);
     color: rgb(22, 20, 20);
     text-decoration: none;
       a:hover {
@@ -71,14 +73,15 @@
  }
 
    .nav  ul li {
+    background-color:rgb(43, 193, 231);
       display: flex;
       text-align:right;
-      justify-content:right;
-      align-content:flex-end;
+      justify-content:center;
+      align-content:center;
       flex-direction:column; /* column | row */
       text-decoration: none;
-      padding: 0px; 
-      margin: 0px;
+        padding-right: 0px; 
+       margin-right: 0px;
       position: relative;
       font-weight: 500;
       font-size: 24px;
@@ -89,6 +92,8 @@
       }
     }
 .hoveritem {
+  width: 100%;
+  //color: rgb(22, 20, 20);
   background-color:transparent;
 }
 
@@ -101,7 +106,7 @@
     background-color:rgb(2, 14, 3);
     color: rgb(240, 232, 232);
      position:relative;
-    text-align: center;
+    text-align: right;
     justify-content:center;
     align-content:center;
     padding: 0px;

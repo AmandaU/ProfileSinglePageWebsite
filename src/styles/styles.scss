@@ -14,7 +14,7 @@ $theme-font:  verdana, sans-serif;
   height:100vh; /* This is needed to overcome a Chrome bug. */
   width:100vw; 
   font-family: 'Bariol', 'BariolBold';//,'Helvetica Neue', Arial, sans-serif;
-  color: rgb(231, 43, 43);
+  color: rgb(76, 74, 80);
   background-color: #f8f5f7;
   -webkit-font-smoothing: antialiased;
    max-width: 100%;
@@ -30,19 +30,15 @@ $theme-font:  verdana, sans-serif;
   }
   
   h1, h2 {
-    //font-family: BariolBold;
     font-weight: 600;
     color: rgb(36, 31, 29);
   }
   ul {
     list-style-type:none;
-   // padding: 20;
-  }
+     }
   li {
    display: flex;
-  //   justify-content:left;
-  //  align-content:left;
-    flex-direction:column; /* column | row  */
+     flex-direction:column; /* column | row  */
 }
 
  
@@ -70,8 +66,7 @@ $theme-font:  verdana, sans-serif;
     -moz-column-count:1;
        -webkit-column-count:1;
        column-count: 1;
-    
-  }
+    }
 }
 
 //Hover
