@@ -1,8 +1,8 @@
 <template>
  
  <div class="photocontainer">
-      <div class="container cols">
-       <div class="hvrbox" v-bind:key="project.id" v-for="project in projects">
+      <div class="cols">
+       <div class="hvrbox" v-bind:key="project.id" v-for="project in filterProjects">
            <img v-bind:src="project.linkphotourl" class="hvrbox-layer_bottom" >
           <div class="hvrbox-layer_top" v-on:click="redirectToProject(project.projectlink)">
               <ul>       
@@ -19,7 +19,9 @@
 
 <script>
 import jsondata from '../assets/data.json'
-let projectsjson = jsondata
+let projectsjson = jsondata;
+let projects = [];
+let filterparam = '';
 // import db from './firebaseInit'
 // let projectsRef = db.ref('projects')
 
@@ -31,22 +33,86 @@ export default {
 //    firebase: {
 //     projects: projectsRef
 // },
-methods: {
-  redirectToProject (link) {
-     this.$router.push(
-        {
-         path: link,
-        }
-     )
- }
-},
-  data () {
-    return {
-    
-       projects : projectsjson
-    }
-  }
 
+data () {
+    return {
+          projects : []
+    }
+  },
+
+//  created () {
+//     this.filterProjects();
+//   },
+
+ computed: {
+    filterProjects() {
+//debugger;
+       console.log('route', this.$route.params.projectfilter);
+        this.filterparam = this.$route.params.projectfilter;
+        console.log('route name', this.filterparam);
+
+         if(this.filterparam == 'all') 
+        {
+          //this.projects = projectsjson;
+          return projectsjson;
+        }
+      else
+        {
+          return projectsjson.filter(project => {
+         return project.projecttype == this.filterparam;
+      })
+          
+        } 
+    }
+  },
+
+
+methods: {
+
+  // filterProjects: function () {
+
+  //    debugger;
+  //       console.log('route', this.$route.params.projectfilter);
+  //       this.filterparam = this.$route.params.projectfilter;
+  //       console.log('route name', this.filterparam);
+
+  //        if(this.filterparam == 'all') 
+  //       {
+  //         this.projects = projectsjson;
+  //         return projects;
+  //       }
+  //       else
+  //       {
+  //          return projects.filter(function (project) {
+  //              return project.projecttype == this.filterparam;
+  //            })
+  //       } 
+   
+  // },
+    redirectToProject (link) {
+      this.$router.push(
+          {
+          path: link,
+          }
+      )
+    },
+    // filterProjects ()
+    // {
+    //     debugger;
+    //     console.log('route', this.$route.params.projectfilter);
+    //     this.filterparam = this.$route.params.projectfilter;
+    //     console.log('route name', this.filterparam);
+
+    //     if(this.filterparam == 'all') 
+    //     {
+    //       this.projects = projectsjson;
+    //     }
+    //     else
+    //     {
+    //       this.projects = projectsjson.find(item => item.projecttype == this.filterparam);
+    //     } 
+    // },
+  }
 }
 </script>
 

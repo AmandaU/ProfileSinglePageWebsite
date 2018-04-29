@@ -39,7 +39,7 @@ methods:
     console.log('route', this.$route.params.name);
     this.nameparam = this.$route.params.name;
     console.log('route name', this.nameparam);
-    var project = projectsjson.find(item => item.projectid === this.nameparam);
+    var project = projectsjson.find(item => item.projectid == this.nameparam);
 
     this.title = project.projecttitle;
     this.subtitle = project.projectsubtitle;
@@ -51,7 +51,7 @@ methods:
 },
    data : function ()  {
     return {
-      projects: projectsjson,
+      //projects: projectsjson,
       title : '',
      description : '',
      splurb: '',

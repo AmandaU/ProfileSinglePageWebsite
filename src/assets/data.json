@@ -17,7 +17,8 @@
         "splurb" : ["blah b;ah blah ",
             "<a href='http://www.google.com'>UK boy</a>",
             "my mom is great"
-        ]
+        ],
+        "projecttype" : "illustration"
       } ,
     {
         "projectid": "project2",
@@ -35,7 +36,8 @@
        ],
       "projectlink" : "/project/project2",
       "splurb" : ["blah blah",
-       " <a href='http://www.google.com'>Eden</a>  blah"]
+       " <a href='http://www.google.com'>Eden</a>  blah"],
+       "projecttype" : "illustration"
     } ,
     {
         "projectid": "project3",
@@ -52,7 +54,8 @@
           }
          ],
         "projectlink" : "/project/project3",
-        "splurb" : "blah b;ah  <a href='http://www.google.com'>Fiction</a> blah"
+        "splurb" : "blah b;ah  <a href='http://www.google.com'>Fiction</a> blah",
+        "projecttype" : "photography"
       } 
       , {
         "projectid": "project4",
@@ -72,7 +75,8 @@
         "splurb" : ["blah b;ah blah ",
             "<a href='http://www.google.com'>Generations</a>",
             "blah de blah de blah"
-        ]
+        ],
+        "projecttype" : "styling"
       } ,
       {
         "projectid": "project5",
@@ -91,7 +95,8 @@
          "projectlink" : "/project/project1",
          "splurb" : ["This was my very first project that I am very proud of.",
            " I collaborated with  <a href='http://www.google.com'>Faithless</a>",
-         "shown by Not Seen for The Young N Lazee"]
+         "shown by Not Seen for The Young N Lazee"],
+         "projecttype" : "photography"
        }, 
         {
         "projectid": "project6",
@@ -111,7 +116,8 @@
         "splurb" : ["My mom is great ",
             "blah <a href='http://www.google.com'>Y n L</a>",
             "blah de blah de blah"
-        ]
+        ],
+        "projecttype" : "illustration"
       } 
       , {
         "projectid": "project7",
@@ -131,7 +137,8 @@
         "splurb" : ["My mom is great ",
             "heheh lalala de da <a href='http://www.google.com'>leo</a>",
             "blah de blah de blah"
-        ]
+        ],
+        "projecttype" : "styling"
       } 
       , {
         "projectid": "project8",
@@ -152,7 +159,8 @@
             "kjvkjhdfvkj",
             "<a href='http://www.google.com'>leo</a>",
             "blah de blah de blah"
-        ]
+        ],
+        "projecttype" : "styling"
       } 
       , {
         "projectid": "project9",
@@ -172,7 +180,8 @@
         "splurb" : ["My mom is great ",
             "<a href='http://www.google.com'>spilt juice</a>",
             "blah de blah de blah"
-        ]
+        ],
+        "projecttype" : "styling"
       } 
       , {
         "projectid": "project10",
@@ -192,7 +201,8 @@
         "splurb" : ["My mom is great ",
             "<a href='http://www.google.com'>happy show</a>",
             "blah de blah de blah"
-        ]
+        ],
+        "projecttype" : "illustration"
       } 
       , {
         "projectid": "project11",
@@ -212,7 +222,8 @@
         "splurb" : ["My mom is great ",
             "<a href='http://www.google.com'>happy show</a>",
             "blah de blah de blah"
-        ]
+        ],
+        "projecttype" : "illustration"
       } 
       , {
         "projectid": "project12",
@@ -232,7 +243,8 @@
         "splurb" : ["My mom is great ",
             "<a href='http://www.google.com'>YnL</a>",
             "blah de blah de blah"
-        ]
+        ],
+        "projecttype" : "illustration"
       } 
       , {
         "projectid": "project13",
@@ -262,7 +274,8 @@
         "splurb" : ["My mom is great ",
             "<a href='http://www.google.com'>YnL</a>",
             "blah de blah de blah"
-        ]
+        ],
+        "projecttype" : "photography"
       } 
   ]
   

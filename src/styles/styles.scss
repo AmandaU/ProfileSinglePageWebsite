@@ -41,16 +41,15 @@ $theme-font:  verdana, sans-serif;
      flex-direction:column; /* column | row  */
 }
 
- 
 //Main body Image gallery
 .cols{
+
   -moz-column-count:3;
   -moz-column-gap: 0px;
   -webkit-column-count:3;
   -webkit-column-gap: 0px;
   column-count: 3;
   column-gap: 0px;
-
 }
 
 @media all and (max-width: 800px) {
@@ -80,7 +79,8 @@ $theme-font:  verdana, sans-serif;
 	overflow: hidden;
 	max-width: 100%;
   height: auto;
-  vertical-align: top;
+  vertical-align:top;
+
 }
 .hvrbox img {
   max-width: 100%;

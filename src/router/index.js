@@ -10,7 +10,8 @@ Vue.use(Router)
 export default new Router({
   routes: [
     {
-      path: '/',
+      path: '/main/:projectfilter?',
+      alias: '/',
       name: 'MainPage',
       component: MainPage
     },

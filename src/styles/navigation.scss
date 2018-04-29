@@ -20,16 +20,17 @@
   }
 
   .dropdownmenu {
-    height:120px;
+    position: relative;
+    height:100px;
     width:120px;
     text-align: right;
-    top: 20px;
-    left:50px;
+    top: 0px;
+    left:60;
    font-weight: 600;
    font-size: 20px;
    display: flex;
    float: left;
-   padding-top: 20px;
+   padding-top: 15px;
    flex-direction:column; 
 
    -webkit-transform:  rotate(-90deg);
@@ -62,11 +63,11 @@
     }
 
   .hoversubitem{
-   color: rgb(51, 50, 50);
-     padding-right: 15px;
-     margin:3px;
+   color: rgb(70, 68, 68);
+     padding-right: 10px;
+     margin:2px;
     font-weight: 80;
-    font-size: 18px;
+    font-size: 16px;
    position:relative;
     text-align: right;
     justify-content:center;

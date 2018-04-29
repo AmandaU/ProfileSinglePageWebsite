@@ -7,50 +7,16 @@
        <div class="dropdownmenu">
 
              <div class="hoveritem" v-on:click="toggle()">Projects </div>
-           <div class=" hoversubitem" v-show="isSubMenuOpen" v-on:click="filterProjects('all')">All</div> 
-          <div class=" hoversubitem" v-show="isSubMenuOpen" v-on:click="filterProjects('photography')">Photography</div>
-          <div class=" hoversubitem" v-show="isSubMenuOpen" v-on:click="filterProjects('illustration')">Illustration</div>
-          <div class=" hoversubitem" v-show="isSubMenuOpen" v-on:click="filterProjects('styling')">Styling</div>
+            <div class=" hoversubitem" v-show="isSubMenuOpen" v-on:click="filterProjects('/main/photography')">Photography</div>
+          <div class=" hoversubitem" v-show="isSubMenuOpen" v-on:click="filterProjects('/main/illustration')">Illustration</div>
+          <div class=" hoversubitem" v-show="isSubMenuOpen" v-on:click="filterProjects('/main/styling')">Styling</div>
            <div class="hoveritem" v-on:click="close('/jade')" >About</div>
             <div class="hoveritem" v-on:click="close('/contact')"  >Contact </div>
          </div>
       </div>
        <router-view></router-view>
     </div>
-    <!-- <div class="floatingmenu">
-      <div class="nav hnav">
-         <ul>
-              <li>
-                  <div class="hoveritem" v-on:click="toggle()">Projects </div>
-
-              </li>
-              <li>
-             <div class="hitem" v-show="isSubMenuOpen" v-on:click="filterProjects('all')">All</div>
-            <li>
-              <div class="hitem" v-show="isSubMenuOpen" v-on:click="filterProjects('photography')">Photography</div>
-            </li>
-            <li> <div class="hitem" v-show="isSubMenuOpen" v-on:click="filterProjects('illustration')">Illustration</div>
-            </li>
-            <li> <div class="hitem" v-show="isSubMenuOpen" v-on:click="filterProjects('styling')">Styling</div>
-            </li>
-            <li v-on:click="close()" ><router-link  to="/jade">About</router-link></li>
-            <li v-on:click="close()"  ><router-link  to="/contact">Contact</router-link></li>
-          </ul>
-      </div> -->
-      <!-- <div class="nav vnav" v-visible="isSubMenuOpen">
-         <ul >
-           <li>
-             <div class="hitem" v-on:click="filterProjects('all')">All</div>
-            <li>
-              <div class="hitem" v-on:click="filterProjects('photography')">Photography</div>
-            </li>
-            <li> <div class="hitem" v-on:click="filterProjects('illustration')">Illustration</div>
-            </li>
-            <li> <div class="hitem" v-on:click="filterProjects('styling')">Styling</div>
-            </li>
-         </ul>
-      </div> -->
-   
+    
    </div>
   
 </template>
@@ -66,10 +32,12 @@ export default {
         }},
 
   methods: {
+    
      filterProjects (filter) {
+       //debugger;
      this.$router.push(
         {
-         path: "/",
+         path: filter,
         }
      )
  },
@@ -86,6 +54,7 @@ export default {
     },
     toggle() {
       this.isSubMenuOpen = !this.isSubMenuOpen;
+      this.filterProjects('/main/all');
     },
 
      showAll() {
