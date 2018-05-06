@@ -13,8 +13,8 @@
               "alt": ""
           }
          ],
-        "projectlink" : "/project/project5",
-        "splurb" : ["blah b;ah blah ",
+        "projectlink" : "/project/project1",
+        "splurb" : ["blah blah blah ",
             "<a href='http://www.google.com'>UK boy</a>",
             "my mom is great"
         ],
@@ -26,11 +26,11 @@
       "clientwebsite" : "www.edenexperience.co.za",
       "projectsubtitle" : "The festival project",
       "id" : 2,
-      "linkphotourl" : "./src/assets/EDEN APRIL poster-03.png",
+      "linkphotourl" : "./src/assets/EDENAPRILposter-03.png",
       "photos" : [
         {
             "id": "1",
-            "url": "./src/assets/EDEN APRIL poster-03.png",
+            "url": "./src/assets/EDENAPRILposter-03.png",
             "alt": ""
         }
        ],
@@ -45,16 +45,16 @@
         "clientwebsite" : "www.edenexperience.co.za",
         "projectsubtitle" : "NYE Poster",
         "id" : 3,
-        "linkphotourl" : "./src/assets/Fiction NYE-poster.png",
+        "linkphotourl" : "./src/assets/FictionNYE-poster.png",
         "photos" : [
           {
               "id": "1",
-              "url": "./src/assets/Fiction NYE-poster.png",
+              "url": "./src/assets/FictionNYE-poster.png",
               "alt": ""
           }
          ],
         "projectlink" : "/project/project3",
-        "splurb" : "blah b;ah  <a href='http://www.google.com'>Fiction</a> blah",
+        "splurb" : ["blah b;ah  <a href='http://www.google.com'>Fiction</a> blah"],
         "projecttype" : "photography"
       } 
       , {
@@ -63,11 +63,11 @@
         "clientwebsite" : "www.edenexperience.co.za",
         "projectsubtitle" : "NYE Poster",
         "id" : 4,
-        "linkphotourl" : "./src/assets/Generations 3-04.png",
+        "linkphotourl" : "./src/assets/Generations3-04.png",
         "photos" : [
           {
               "id": "1",
-              "url": "./src/assets/Generations 3-04.png",
+              "url": "./src/assets/Generations3-04.png",
               "alt": ""
           }
          ],
@@ -84,15 +84,15 @@
          "clientwebsite" : "www.youngandlazy.co.za",
          "projectsubtitle" : "The Faithless SA Tour",
          "id" : 5,
-         "linkphotourl" : "./src/assets/Faithless SA tour.png",
+         "linkphotourl" : "./src/assets/FaithlessSAtour.png",
          "photos" : [
                  {
                      "id": "1",
-                     "url": "./src/assets/Faithless SA tour.png",
+                     "url": "./src/assets/FaithlessSAtour.png",
                      "alt": ""
                  }
                 ],
-         "projectlink" : "/project/project1",
+         "projectlink" : "/project/project5",
          "splurb" : ["This was my very first project that I am very proud of.",
            " I collaborated with  <a href='http://www.google.com'>Faithless</a>",
          "shown by Not Seen for The Young N Lazee"],
@@ -104,19 +104,18 @@
         "clientwebsite" : "www.edenexperience.co.za",
         "projectsubtitle" : "Y n L",
         "id" : 6,
-        "linkphotourl" : "./src/assets/K-$ YnL -03.png",
+        "linkphotourl" : "./src/assets/YnL03.png",
         "photos" : [
           {
               "id": "1",
-              "url": "./src/assets/K-$ YnL -03.png",
+              "url": "./src/assets/YnL03.png",
               "alt": ""
           }
          ],
         "projectlink" : "/project/project6",
         "splurb" : ["My mom is great ",
             "blah <a href='http://www.google.com'>Y n L</a>",
-            "blah de blah de blah"
-        ],
+            "blah de blah de blah"],
         "projecttype" : "illustration"
       } 
       , {
@@ -125,19 +124,18 @@
         "clientwebsite" : "www.edenexperience.co.za",
         "projectsubtitle" : "Y n L",
         "id" : 7,
-        "linkphotourl" : "./src/assets/Leo Mandella colouring book final-14.png",
+        "linkphotourl" : "./src/assets/LeoMandellacolouringbook.png",
         "photos" : [
           {
               "id": "1",
-              "url": "./src/assets/Leo Mandella colouring book final-14.png",
+              "url": "./src/assets/LeoMandellacolouringbook.png",
               "alt": ""
           }
          ],
         "projectlink" : "/project/project7",
         "splurb" : ["My mom is great ",
             "heheh lalala de da <a href='http://www.google.com'>leo</a>",
-            "blah de blah de blah"
-        ],
+            "blah de blah de blah"],
         "projecttype" : "styling"
       } 
       , {
@@ -158,8 +156,7 @@
         "splurb" : ["My mom is great ",
             "kjvkjhdfvkj",
             "<a href='http://www.google.com'>leo</a>",
-            "blah de blah de blah"
-        ],
+            "blah de blah de blah"],
         "projecttype" : "styling"
       } 
       , {
@@ -168,19 +165,18 @@
         "clientwebsite" : "www.edenexperience.co.za",
         "projectsubtitle" : "Spilt Juicy",
         "id" : 9,
-        "linkphotourl" : "./src/assets/Spilt juice 1.png",
+        "linkphotourl" : "./src/assets/Spiltjuice1.png",
         "photos" : [
           {
               "id": "1",
-              "url": "./src/assets/Spilt juice 1.png",
+              "url": "./src/assets/Spiltjuice1.png",
               "alt": ""
           }
          ],
         "projectlink" : "/project/project9",
         "splurb" : ["My mom is great ",
             "<a href='http://www.google.com'>spilt juice</a>",
-            "blah de blah de blah"
-        ],
+            "blah de blah de blah" ],
         "projecttype" : "styling"
       } 
       , {
@@ -189,19 +185,18 @@
         "clientwebsite" : "www.edenexperience.co.za",
         "projectsubtitle" : "Fiction The Happy Show",
         "id" : 10,
-        "linkphotourl" : "./src/assets/the happy show-03.png",
+        "linkphotourl" : "./src/assets/thehappyshow-03.png",
         "photos" : [
           {
               "id": "1",
-              "url": "./src/assets/the happy show-03.png",
+              "url": "./src/assets/thehappyshow-03.png",
               "alt": ""
           }
          ],
         "projectlink" : "/project/project10",
         "splurb" : ["My mom is great ",
             "<a href='http://www.google.com'>happy show</a>",
-            "blah de blah de blah"
-        ],
+            "blah de blah de blah" ],
         "projecttype" : "illustration"
       } 
       , {
@@ -210,19 +205,18 @@
         "clientwebsite" : "www.edenexperience.co.za",
         "projectsubtitle" : "WLS stuff",
         "id" : 11,
-        "linkphotourl" : "./src/assets/WLS 1.jpg",
+        "linkphotourl" : "./src/assets/WLS1.jpg",
         "photos" : [
           {
               "id": "1",
-              "url": "./src/assets/WLS 1.jpg",
+              "url": "./src/assets/WLS1.jpg",
               "alt": ""
           }
          ],
         "projectlink" : "/project/project11",
         "splurb" : ["My mom is great ",
             "<a href='http://www.google.com'>happy show</a>",
-            "blah de blah de blah"
-        ],
+            "blah de blah de blah" ],
         "projecttype" : "illustration"
       } 
       , {
@@ -231,19 +225,18 @@
         "clientwebsite" : "www.edenexperience.co.za",
         "projectsubtitle" : "YnL Poster",
         "id" : 12,
-        "linkphotourl" : "./src/assets/YnL poster-04.png",
+        "linkphotourl" : "./src/assets/YnLposter-04.png",
         "photos" : [
           {
               "id": "1",
-              "url": "./src/assets/YnL poster-04.png",
+              "url": "./src/assets/YnLposter-04.png",
               "alt": ""
           }
          ],
         "projectlink" : "/project/project12",
         "splurb" : ["My mom is great ",
             "<a href='http://www.google.com'>YnL</a>",
-            "blah de blah de blah"
-        ],
+            "blah de blah de blah"],
         "projecttype" : "illustration"
       } 
       , {
@@ -252,29 +245,28 @@
         "clientwebsite" : "www.edenexperience.co.za",
         "projectsubtitle" : "YnL Young Guns thing",
         "id" : 13,
-        "linkphotourl" : "./src/assets/Young Guns YnL YT-03.png",
+        "linkphotourl" : "./src/assets/YoungGunsYnL03.png",
         "photos" : [
           {
               "id": "1",
-              "url": "./src/assets/Young Guns YnL YT-03.png",
+              "url": "./src/assets/YoungGunsYnL03.png",
               "alt": ""
           },
           {
             "id": "2",
-            "url": "./src/assets/YnL poster-04.png",
+            "url": "./src/assets/YnLposter-04.png",
             "alt": ""
         },
         {
             "id": "3",
-            "url": "./src/assets/K-$ YnL -03.png",
+            "url": "./src/assets/YnL03.png",
             "alt": ""
         }
          ],
         "projectlink" : "/project/project13",
         "splurb" : ["My mom is great ",
             "<a href='http://www.google.com'>YnL</a>",
-            "blah de blah de blah"
-        ],
+            "blah de blah de blah" ],
         "projecttype" : "photography"
       } 
   ]

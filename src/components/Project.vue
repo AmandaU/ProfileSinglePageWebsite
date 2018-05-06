@@ -1,25 +1,25 @@
 <template>
-<div class="page">
- <div class="navcolumn">
-    
-     <h1>{{ title }}</h1>
+ <div class="page"> 
+  <div class="navcolumn">
+      <h1>{{ title }}</h1>
       <p v-html="splurb"></p>
-     <h2>{{ subtitle }}</h2>
+      <h2>{{ subtitle }}</h2>
   </div>
+ <media :query="{maxWidth: 800}" @media-enter="media800Enter" @media-leave="media800Leave"> </Media>
+  <div v-bind:class="[greaterThan800 ? 'projectcontainerrow' : 'projectcontainercol']">
+    
+        <div v-bind:class="[greaterThan800 ? 'imageboxrow' : 'imageboxcol']" v-for="image in images" v-bind:key="image.id">
+            <img v-bind:src="image.url" v-bind:alt="image.alt" >
+        </div> 
+   
+  </div> 
 
- <div class="projectcontainer">
-    <div class="rows">
-       <div class="imagebox" v-for="image in images" v-bind:key="image.id">
-           <img v-bind:src="image.url" v-bind:alt="image.alt" >
-      </div>
-    </div>
-  </div>
- </div>
+</div> 
   
 </template>
 
 <script>
-
+import Media from 'vue-media'
 import jsondata from '../assets/data.json'
 let projectsjson = jsondata
 let nameparam = '';
@@ -31,9 +31,18 @@ let clientwebsite = '';
 
 export default {
   name: 'Project',
+ components: {
+    Media
+  },
 
 methods: 
 { 
+  media800Enter(mediaQueryString) {
+      this.greaterThan800 = false
+    },
+    media800Leave(mediaQueryString) {
+      this.greaterThan800 = true
+    },
    fetchProject ()
    {
     console.log('route', this.$route.params.name);
@@ -53,9 +62,10 @@ methods:
     return {
       //projects: projectsjson,
       title : '',
-     description : '',
-     splurb: '',
-     images: [],
+      description : '',
+      splurb: '',
+      images: [],
+      greaterThan800: window.innerWidth > 800
       }
   },
 

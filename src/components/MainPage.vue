@@ -1,27 +1,33 @@
 <template>
- 
+
+   
  <div class="photocontainer">
-      <div class="cols">
-       <div class="hvrbox" v-bind:key="project.id" v-for="project in filterProjects">
-           <img v-bind:src="project.linkphotourl" class="hvrbox-layer_bottom" >
-          <div class="hvrbox-layer_top" v-on:click="redirectToProject(project.projectlink)">
-              <ul>       
-                <li>{{project.projecttitle}}</li>
-                <li>{{project.projectsubtitle}}</li>
-            </ul>
-        	</div>       
-           
+    <media :query="{maxWidth: 800}" @media-enter="media800Enter" @media-leave="media800Leave"> </Media>
+       <!-- <div class="cols">  -->
+        <div v-bind:class="[isRow ? 'rowstyle' : 'cols']"> 
+            <div class="hvrbox" v-bind:key="project.id" v-for="project in filterProjects">
+                <img v-bind:src="project.linkphotourl" class="hvrbox-layer_bottom" >
+                  <div class="hvrbox-layer_top" v-on:click="redirectToProject(project.projectlink)">
+                      <ul>       
+                        <li>{{project.projecttitle}}</li>
+                        <li>{{project.projectsubtitle}}</li>
+                    </ul>
+                  </div>       
+            </div>
         </div>
-      </div>
     </div>
   
 </template>
 
 <script>
 import jsondata from '../assets/data.json'
+import Media from 'vue-media'
+
+
 let projectsjson = jsondata;
 let projects = [];
 let filterparam = '';
+
 // import db from './firebaseInit'
 // let projectsRef = db.ref('projects')
 
@@ -30,22 +36,31 @@ let filterparam = '';
 export default {
   name: 'mainpage',
 
+   components: {
+    Media
+  },
+
 //    firebase: {
 //     projects: projectsRef
 // },
-
-data () {
-    return {
-          projects : []
-    }
-  },
 
 //  created () {
 //     this.filterProjects();
 //   },
 
+data () {
+    return {
+          projects : [],
+        isRow: false,
+        greaterThan800: window.innerWidth > 800,
+    }
+  },
+
+
  computed: {
-    filterProjects() {
+  
+  filterProjects: function () {
+  
 //debugger;
        console.log('route', this.$route.params.projectfilter);
         this.filterparam = this.$route.params.projectfilter;
@@ -53,15 +68,18 @@ data () {
 
          if(this.filterparam == 'all') 
         {
-          //this.projects = projectsjson;
+           this.isRow = false;
           return projectsjson;
         }
-      else
+        else
         {
-          return projectsjson.filter(project => {
-         return project.projecttype == this.filterparam;
-      })
-          
+         // debugger;
+          var list =  projectsjson.filter(project => {
+            return project.projecttype == this.filterparam;
+             });
+
+             this.isRow = this.greaterThan800?  list.length <= 4: false;
+             return list;
         } 
     }
   },
@@ -69,26 +87,13 @@ data () {
 
 methods: {
 
-  // filterProjects: function () {
-
-  //    debugger;
-  //       console.log('route', this.$route.params.projectfilter);
-  //       this.filterparam = this.$route.params.projectfilter;
-  //       console.log('route name', this.filterparam);
-
-  //        if(this.filterparam == 'all') 
-  //       {
-  //         this.projects = projectsjson;
-  //         return projects;
-  //       }
-  //       else
-  //       {
-  //          return projects.filter(function (project) {
-  //              return project.projecttype == this.filterparam;
-  //            })
-  //       } 
-   
-  // },
+     media800Enter(mediaQueryString) {
+      this.greaterThan800 = false
+    },
+    media800Leave(mediaQueryString) {
+      this.greaterThan800 = true
+    },
+  
     redirectToProject (link) {
       this.$router.push(
           {
@@ -96,22 +101,7 @@ methods: {
           }
       )
     },
-    // filterProjects ()
-    // {
-    //     debugger;
-    //     console.log('route', this.$route.params.projectfilter);
-    //     this.filterparam = this.$route.params.projectfilter;
-    //     console.log('route name', this.filterparam);
-
-    //     if(this.filterparam == 'all') 
-    //     {
-    //       this.projects = projectsjson;
-    //     }
-    //     else
-    //     {
-    //       this.projects = projectsjson.find(item => item.projecttype == this.filterparam);
-    //     } 
-    // },
+    
   }
 }
 </script>

@@ -5,7 +5,7 @@
         <h2>{{ designername }}</h2>
     </div>
 
-  <div class="projectcontainer">
+  <div class="contactcontainer">
        <div class="verticalscrollcontainer">
            <br>
 
