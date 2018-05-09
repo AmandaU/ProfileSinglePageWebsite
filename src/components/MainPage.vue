@@ -1,20 +1,31 @@
 <template>
-
-   
+  
  <div class="photocontainer">
-    <media :query="{maxWidth: 800}" @media-enter="media800Enter" @media-leave="media800Leave"> </Media>
-       <!-- <div class="cols">  -->
-        <div v-bind:class="[isRow ? 'rowstyle' : 'cols']"> 
-            <div class="hvrbox" v-bind:key="project.id" v-for="project in filterProjects">
-                <img v-bind:src="project.linkphotourl" class="hvrbox-layer_bottom" >
-                  <div class="hvrbox-layer_top" v-on:click="redirectToProject(project.projectlink)">
+     <media :query="{maxWidth: 800}" @media-enter="media800Enter" @media-leave="media800Leave"> </Media> 
+       
+        <!-- <div v-bind:class="[isRow ? 'rowstyle' : 'cols']">  
+                <div class="hvrbox" v-bind:key="project.id" v-for="project in filterProjects">
+                 <img v-bind:src="project.linkphotourl" class="hvrbox-layer_bottom" >  
+                    <div class="hvrbox-layer_top" v-on:click="redirectToProject(project.projectlink)">
                       <ul>       
                         <li>{{project.projecttitle}}</li>
                         <li>{{project.projectsubtitle}}</li>
                     </ul>
-                  </div>       
-            </div>
-        </div>
+                  </div> 
+              </div>
+        </div>   -->
+
+        <div v-bind:class="[isRow ? 'rowstyle' : 'cols']">  
+                <div class="hvrbox" v-bind:key="project.id" v-for="project in filterProjects">
+                 <img v-bind:src="project.linkphotourl" class="hvrbox-layer_bottom" >  
+                    <div class="hvrbox-layer_top" v-on:click="redirectToProject(project.projectlink)">
+                      <ul>       
+                        <li>{{project.projecttitle}}</li>
+                        <li>{{project.projectsubtitle}}</li>
+                    </ul>
+                  </div> 
+              </div>
+        </div>  
     </div>
   
 </template>
@@ -22,7 +33,6 @@
 <script>
 import jsondata from '../assets/data.json'
 import Media from 'vue-media'
-
 
 let projectsjson = jsondata;
 let projects = [];

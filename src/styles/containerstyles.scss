@@ -1,3 +1,22 @@
+.projectlinkitem{
+  background-color:transparent;
+  color: rgb(26, 25, 25);
+   position:relative;
+  text-align: right;
+  justify-content:center;
+  align-content:center;
+  padding: 5px;
+  margin: 0px;
+  font-weight: 100;
+  font-size: 20px;
+  width:50%;
+  height: 50%;
+}
+
+.projectlinkitem:hover {
+  text-decoration:underline;
+  cursor: pointer;
+  }
 
 .page{
 //  background:rgb(196, 88, 74);
@@ -60,7 +79,7 @@
     
       .projectcontainercol {
        
-        height:80%;
+        height:100%;
         width:100vw;
         background:rgb(252, 250, 249);
         float:right;
@@ -106,7 +125,7 @@
   background:rgb(226, 247, 107);
   align-content: center;
   object-fit: scale-down;
-  max-height: 85vh;
+  max-height: 63vh;
   height: 100%;
   width:auto;
   display: block ;/*for the img inside your div */  
@@ -168,18 +187,6 @@
        // padding-bottom: 0%;
       }
 
-     
-        // .imagebox img{
-         
-        //   background:rgb(226, 247, 107);
-        //   align-content: center;
-        // object-fit: scale-down;
-        // max-height: auto;
-        //     height: auto;
-        // width:100%;
-        // display: block ;/*for the img inside your div */  
-        // }
-    
   }
 
   

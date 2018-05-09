@@ -7,7 +7,6 @@
   </div>
  <media :query="{maxWidth: 800}" @media-enter="media800Enter" @media-leave="media800Leave"> </Media>
   <div v-bind:class="[greaterThan800 ? 'projectcontainerrow' : 'projectcontainercol']">
-    
         <div v-bind:class="[greaterThan800 ? 'imageboxrow' : 'imageboxcol']" v-for="image in images" v-bind:key="image.id">
             <img v-bind:src="image.url" v-bind:alt="image.alt" >
         </div> 
