@@ -25,13 +25,17 @@
 }
 
 .photocontainer {
-  height:100vh;
-  width:100vw;
-  //background:rgb(233, 8, 158);
+  // height:100vh;
+  // width:100vw;
+
+  height:100%;
+  width:100%;
+ 
   float:right;
   overflow-y: auto;
  
 }
+
 
 .verticalscrollcontainer{
   width: 100%;

@@ -1,5 +1,6 @@
 [ 
     {
+        "ratio": 1.375,
         "projectid": "project1",
         "projecttitle" : "UK Boy",
         "clientwebsite" : "www.edenexperience.co.za",
@@ -21,6 +22,7 @@
         "projecttype" : "illustration"
       } ,
     {
+        "ratio": 1.250,
         "projectid": "project2",
       "projecttitle" : "Eden Experience",
       "clientwebsite" : "www.edenexperience.co.za",
@@ -38,8 +40,10 @@
       "splurb" : ["blah blah",
        " <a href='http://www.google.com'>Eden</a>  blah"],
        "projecttype" : "illustration"
-    } ,
+     } 
+     ,
     {
+        "ratio": 1.165,
         "projectid": "project3",
         "projecttitle" : "Fiction",
         "clientwebsite" : "www.edenexperience.co.za",
@@ -58,6 +62,7 @@
         "projecttype" : "photography"
       } 
       , {
+        "ratio": 1,
         "projectid": "project4",
         "projecttitle" : "Generations",
         "clientwebsite" : "www.edenexperience.co.za",
@@ -79,6 +84,7 @@
         "projecttype" : "styling"
       } ,
       {
+        "ratio": 1.26,
         "projectid": "project5",
          "projecttitle" : "Faithless",
          "clientwebsite" : "www.youngandlazy.co.za",
@@ -99,6 +105,7 @@
          "projecttype" : "photography"
        }, 
         {
+            "ratio": 1,
         "projectid": "project6",
         "projecttitle" : "Yun n Layzee",
         "clientwebsite" : "www.edenexperience.co.za",
@@ -119,6 +126,7 @@
         "projecttype" : "illustration"
       } 
       , {
+        "ratio":1.415,
         "projectid": "project7",
         "projecttitle" : "leo",
         "clientwebsite" : "www.edenexperience.co.za",
@@ -139,6 +147,7 @@
         "projecttype" : "styling"
       } 
       , {
+        "ratio": 1.185,
         "projectid": "project8",
         "projecttitle" : "leo",
         "clientwebsite" : "www.edenexperience.co.za",
@@ -160,6 +169,7 @@
         "projecttype" : "styling"
       } 
       , {
+        "ratio": 0.59,
         "projectid": "project9",
         "projecttitle" : "Spilt Juice",
         "clientwebsite" : "www.edenexperience.co.za",
@@ -180,6 +190,7 @@
         "projecttype" : "styling"
       } 
       , {
+        "ratio": 1.26,
         "projectid": "project10",
         "projecttitle" : "Happy Show",
         "clientwebsite" : "www.edenexperience.co.za",
@@ -200,6 +211,7 @@
         "projecttype" : "illustration"
       } 
       , {
+        "ratio": 0.67,
         "projectid": "project11",
         "projecttitle" : "WLS",
         "clientwebsite" : "www.edenexperience.co.za",
@@ -220,6 +232,7 @@
         "projecttype" : "illustration"
       } 
       , {
+        "ratio": 1,
         "projectid": "project12",
         "projecttitle" : "YnL Moticon Poster",
         "clientwebsite" : "www.edenexperience.co.za",
@@ -240,6 +253,7 @@
         "projecttype" : "illustration"
       } 
       , {
+        "ratio": 1,
         "projectid": "project13",
         "projecttitle" : "Young Guns",
         "clientwebsite" : "www.edenexperience.co.za",

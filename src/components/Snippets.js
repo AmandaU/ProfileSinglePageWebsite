@@ -122,3 +122,61 @@
 //     }
 
 //}
+
+
+//Detect changes in window size
+
+
+// mounted() {
+//    window.addEventListener('resize', this.handleWindowResize);
+ 
+  // this.criteria = this.$refs.criteria;
+  // this.containerWidth = this.criteria[0].clientWidth;
+  //     console.log(this.$refs.criteria);
+   // },
+//   beforeDestroy: function () {
+//   window.removeEventListener('resize', this.handleWindowResize)
+// },
+
+//This in Methods:
+//     handleWindowResize(event) { 
+      
+//       this.containerWidth = event.currentTarget.innerWidth/3; 
+      
+//     },
+
+//End Detect changes in window size
+
+
+//Dynamic height of div to contain imge. Obtain image size at runtime
+//   computedWidth: function(project) {
+  
+//         var img = new Image();
+//          img.src = window.URL.createObjectURL(project.linkphotourl)
+//          img.onload = function(project) {
+           
+//          window.URL.revokeObjectURL(img.src)
+//         return  img.height / img.width * self.containerWidth;
+        
+//         }
+     
+//         return 0;
+
+//     },
+
+
+//     getImageStyle: function (project) { 
+   
+// var t = project.ratio * this.containerWidth;
+//           return {'background-image':'url("' + project.linkphotourl + '")',
+//           'width': '100%',
+//           'background-repeat': 'no-repeat',
+//           'background-size': 'contain',
+//           'height': t + 'px',
+//           //'padding-top': t  +'%',
+//           'background-color':'rgb(247, 107, 149)',
+         
+//         }
+//     },
+
+//End Dynamic height of div to contain imge. Obtain image size at runtime
