@@ -7,8 +7,7 @@
 
   <div class="contactcontainer">
        <div class="verticalscrollcontainer">
-           <br>
-
+         
           <!--a target="_blank" title="follow me on Twitter" href="http://www.twitter.com/ursling">
           <img alt="follow me on twitter" src="https://c866088.ssl.cf3.rackcdn.com/assets/twitter40x40.png" border=0>
           </a>
@@ -17,11 +16,11 @@
           <img alt="follow me on youtube" src="https://c866088.ssl.cf3.rackcdn.com/assets/youtube40x40.png" border=0>
           </a>-->
           
-           <h2>To make contact with me, please email me at <a :href="`mailto:ayla.jade@gmail.com`">ayla.jade@gmail.com</a> </h2>
+           <h2><a :href="`mailto:ayla.jade@gmail.com`">ayla.jade@gmail.com</a> </h2>
            <br>
-            <h2>or call me on <a href="tel:0828391629">0828391629</a> </h2>
+            <h2> <a href="tel:0828391629">0828391629</a> </h2>
             <br>
-          <a target="_blank" title="follow me on instagram" href="http://www.instagram.com/urslingz">
+          <!-- <a target="_blank" title="follow me on instagram" href="http://www.instagram.com/urslingz">
           <img alt="follow me on instagram" src="https://c866088.ssl.cf3.rackcdn.com/assets/instagram40x40.png" border=0>
           </a>
          <br>
@@ -33,12 +32,12 @@
           <a target="_blank" title="follow us on instagram" href="http://www.instagram.com/urslingz">
           <img alt="follow us on instagram" src="https://c866088.ssl.cf3.rackcdn.com/assets/badgeinstagram.png" border=0>
           </a>
-        <br> 
+        <br>  -->
           <a href="https://www.instagram.com/urslingz/?ref=badge" class="openig-b- openig-b-16">
           <img src="//badges.instagram.com/static/images/ig-badge-16.png" alt="Instagram" /> 
-          <b>Follow on Instagram</b>
+          <b>AylaRea</b>
           </a>
-        <br>  
+        <!-- <br>  
           <a href="https://www.instagram.com/urslingz/?ref=badge" class="ig-b- ig-b-v-24">
           <img src="//badges.instagram.com/static/images/ig-badge-view-24.png" alt="Instagram" />
           </a>
@@ -46,7 +45,7 @@
 
             <a target="_blank" title="follow me on facebook" href="https://www.facebook.com/ursling">
             <img alt="follow me on facebook" src="https://c866088.ssl.cf3.rackcdn.com/assets/facebook40x40.png" border=0></a>
-        <br>     
+        <br>      -->
 
           <!--vue-goodshare></vue-goodshare>
         <br> 

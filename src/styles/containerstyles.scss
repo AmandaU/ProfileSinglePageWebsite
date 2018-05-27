@@ -36,9 +36,9 @@
  
 }
 
-
 .verticalscrollcontainer{
   width: 100%;
+  height: 80%;
   display:inline-flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -46,6 +46,8 @@
   align-items: center;
   align-content: center;
   text-align: center;
+  vertical-align: middle;
+
   }
 
   .aboutcontainer {
@@ -72,12 +74,12 @@
  
         height:100%;
         width:80vw;
-         background:rgb(46, 146, 245);
+         background:rgb(223, 229, 235);
         float:right;
          vertical-align: middle;
         text-align: right;
         top: 0%;
-        background:rgb(245, 85, 5);
+        background:rgb(245, 240, 237);
         
       }
     
@@ -126,7 +128,7 @@
 
 .imageboxcol img{
 
-  background:rgb(226, 247, 107);
+  background:rgb(211, 211, 210);
   align-content: center;
   object-fit: scale-down;
   max-height: 63vh;
@@ -142,7 +144,7 @@
     padding-top: 20%;
     height:100%;
     width:20vw;
-   background:rgb(46, 146, 245);
+   background:rgb(219, 221, 223);
     float:left;
     vertical-align: middle;
     text-align: right;
@@ -167,8 +169,26 @@
     .aboutcontainer {
       height:100%;
       width:100vw;
-      background:rgb(250, 248, 51);
+      background:rgb(245, 245, 243);
     
+    }
+
+    .verticalscrollcontainer{
+     
+      height: 50%;
+     }
+
+    .contactcontainer {
+ 
+      height:100%;
+      width:100vw;
+       background:rgb(223, 229, 235);
+      float:right;
+       vertical-align: middle;
+      text-align: right;
+      top: 0%;
+      background:rgb(245, 240, 237);
+      
     }
   
     .centeredcontainer{
@@ -180,7 +200,7 @@
         padding: 0;
           height:20%;
         width:100vw;
-        background:rgb(46, 146, 245);
+        background:rgb(237, 241, 245);
         float:top;
         vertical-align: top;
         text-align: center;
