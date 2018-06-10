@@ -8,8 +8,10 @@
         <h2>{{ designername }}</h2>
     </div>
 
-  <div class="aboutcontainer">
-    <div class="centeredcontainer">
+ 
+      <div class="maincontainer">
+       <div class="centeredcontainer">
+     
       <h1>Education</h1>
       <p>I went to Star of The Sea Convent school in Kalk Bay for primary school. High school was the amazing <a href="https://wwww.cedarhouse.co.za" target="_blank">Cedar House</a>
       <br>I got my BA Fashion Design at <a href="https://www.fedisa.co.za" target="_blank">Fedisa</a> in Cape Town

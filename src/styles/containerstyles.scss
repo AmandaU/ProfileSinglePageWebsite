@@ -36,7 +36,7 @@
  
 }
 
-.verticalscrollcontainer{
+.centeredcontainer{
   width: 100%;
   height: 80%;
   display:inline-flex;
@@ -50,27 +50,20 @@
 
   }
 
-  .aboutcontainer {
+  .maincontainer {
     height:100%;
     width:80vw;
     background:rgb(241, 232, 236);
     float:right;
+
+    display: flex;
+    justify-content: center;
+    align-items: center; 
   }
 
-  .centeredcontainer{
-    padding: 20px;
-    margin-left:auto;
-    margin-right:auto;
-    width: 50%;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    text-align: center;
-    background:rgb(241, 232, 236);
-    
-    }
+  
 
-    .contactcontainer {
+    .maincontainer {
  
         height:100%;
         width:80vw;
@@ -166,19 +159,17 @@
 
   @media all and (max-width: 600px) {
 
-    .aboutcontainer {
+    .maincontainer {
       height:100%;
       width:100vw;
       background:rgb(245, 245, 243);
-    
+
+     
+      justify-content: start;
+      align-items: flex-start; 
     }
 
-    .verticalscrollcontainer{
-     
-      height: 50%;
-     }
-
-    .contactcontainer {
+    .maincontainer {
  
       height:100%;
       width:100vw;
@@ -191,9 +182,7 @@
       
     }
   
-    .centeredcontainer{
-        width: 100%;
-      }
+   
 
       .navcolumn {
 

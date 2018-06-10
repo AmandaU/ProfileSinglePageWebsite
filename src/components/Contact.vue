@@ -5,8 +5,8 @@
         <h2>{{ designername }}</h2>
     </div>
 
-  <div class="contactcontainer">
-       <div class="verticalscrollcontainer">
+  <div class="maincontainer">
+       <div class="centeredcontainer">
          
           <!--a target="_blank" title="follow me on Twitter" href="http://www.twitter.com/ursling">
           <img alt="follow me on twitter" src="https://c866088.ssl.cf3.rackcdn.com/assets/twitter40x40.png" border=0>

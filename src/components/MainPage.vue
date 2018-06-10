@@ -3,30 +3,13 @@
   <div class="photocontainer">
 
      <media :query="{maxWidth: 800}" @media-enter="media800Enter" @media-leave="media800Leave"> </Media> 
-       
-
-       <!-- <div id="masonry">
-        <img v-bind:key="project.id" v-for="project in filterProjects" v-bind:src="project.linkphotourl">
-      </div> -->
-
-
-        <!-- <div  v-bind:class="[isRow ? 'rowstyle' : 'cols']">  
-                <div  v-bind:key="project.id" v-for="project in filterProjects" v-on:click="redirectToProject(project.projectlink)" >
-                 <div  :style="getImageStyle(project)"  > 
-                  <img v-bind:src="project.linkphotourl" :style="getImageStyle(project)"  >  
-                  
-                 </div> 
-                  
-               </div> 
-        </div>   -->
-
+      
         <div  v-bind:class="[isRow ? 'rowstyle' : 'cols']">  
                 <div  v-bind:key="project.id" v-for="project in filterProjects" v-on:click="redirectToProject(project.projectlink)" >
                  <div  :style="getImageStyle(project)"  > 
                   <img v-bind:src="project.linkphotourl" :style="getImageStyle(project)"  > 
-                   <!-- <p class="text-append">{{project.projecttitle}}</p>  -->
-                  <div  class="text-append" >
-                      <ul :style="getTextStyle()">       
+                    <div  class="hoverLayer" >
+                       <ul class="centerInHover" >  
                         <li >{{project.projecttitle}}</li>
                         <li >{{project.projectsubtitle}}</li>
                       </ul>
@@ -35,8 +18,6 @@
                   
                </div> 
         </div>  
- 
-
     </div>
   
 </template>
@@ -65,9 +46,10 @@ export default {
 //     projects: projectsRef
 // },
 
-//  created () {
-//     this.filterProjects();
-//   },
+ created () {
+    this.filterProjects();
+    
+  },
 
 mounted() {
    window.addEventListener('resize', this.handleWindowResize);
@@ -80,19 +62,18 @@ mounted() {
 
 data () {
     return {
-          projects : [],
+        projects : [],
         isRow: false,
         greaterThan800: window.innerWidth > 800,
-         containerWidth: window.innerWidth/3,
-             criteria:[]
+        containerWidth: window.innerWidth > 800? window.innerWidth/3: window.innerWidth > 600? window.innerWidth/ 2: window.innerWidth,
+        criteria:[]
     }
   },
  
  computed: {
   
   filterProjects: function () {
-
-       console.log('route', this.$route.params.projectfilter);
+         console.log('route', this.$route.params.projectfilter);
         this.filterparam = this.$route.params.projectfilter;
         console.log('route name', this.filterparam);
 
@@ -112,7 +93,6 @@ data () {
         } 
     }
   },
-
 
 methods: {
 
@@ -139,7 +119,7 @@ methods: {
           // 'background-size': 'contain',
           // 'height': t + 'px',
            'background-color':'rgb(247, 107, 149)',
-          'max-width': '100%',
+           'max-width': '100%',
            'width': this.containerWidth + 'px',
            'height': t + 'px',
            'position': 'relative'

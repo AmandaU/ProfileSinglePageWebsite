@@ -50,8 +50,8 @@ $theme-font:  verdana, sans-serif;
 }
 //Main body Image gallery
 .cols{
-max-width:100%;
-min-width:100%;
+  max-width:100%;
+  min-width:100%;
   -moz-column-count:3;
   -moz-column-gap: 0px;
   -webkit-column-count:3;
@@ -199,30 +199,38 @@ min-width:100%;
   box-sizing: border-box;
 }
 
-.text-append{
+.hoverLayer{
   position: absolute;
   text-align:center;
-  // top: 80%;
-  // left: 50%;
-  top:0;
+   top:0;
   left:0;
   bottom:0;
   right:0;
-  //transform: translate(-50%, -50%);
   overflow: hidden;
   background: rgba(0, 0, 0, 0.6);
-	color: #fff;
+	color:rgba(226, 224, 224, 0.6);
   padding: 15px;
   -moz-transition: all 0.4s ease-in-out 0s;
 	-webkit-transition: all 0.4s ease-in-out 0s;
 	-ms-transition: all 0.4s ease-in-out 0s;
   transition: all 0.4s ease-in-out 0s;
   opacity:0;
+
 }
 
-.text-append:hover  { opacity: 1; }
+.hoverLayer:hover  { opacity: 1; }
 
 
+.centerInHover {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+}
+// .hoverLayer .ul{
+//   text-align:center;
+
+// }
 //Masonry example
 
 div#masonry { 
