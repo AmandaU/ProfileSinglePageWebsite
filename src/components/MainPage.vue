@@ -59,7 +59,6 @@ mounted() {
   window.removeEventListener('resize', this.handleWindowResize)
 },
 
-
 data () {
     return {
         projects : [],
@@ -113,12 +112,7 @@ methods: {
       getImageStyle: function (project) { 
        var t = project.ratio * this.containerWidth;
           return  {
-          //   'background-image':'url("' + project.linkphotourl + '")',
-          //  'width': '100%',
-          //  'background-repeat': 'no-repeat',
-          // 'background-size': 'contain',
-          // 'height': t + 'px',
-           'background-color':'rgb(247, 107, 149)',
+          'background-color':'rgb(247, 107, 149)',
            'max-width': '100%',
            'width': this.containerWidth + 'px',
            'height': t + 'px',
@@ -133,8 +127,6 @@ methods: {
           'position': 'absolute',
           'top': '50%',
           'left': '50%'
-         // 'margin-top': -this.containerWidth + 'px'
-          
         }
     },
 
