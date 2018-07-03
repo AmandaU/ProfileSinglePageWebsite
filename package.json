@@ -12,9 +12,11 @@
     "build": "node build/build.js"
   },
   "dependencies": {
+    "@haiku/ursling-jayla": "0.0.9",
     "firebase": "^4.11.0",
     "json-loader": "^0.5.7",
     "node-sass": "^4.7.2",
+    "replace": "^1.0.0",
     "sass-loader": "^6.0.6",
     "vue": "^2.5.16",
     "vue-media": "^1.1.1",

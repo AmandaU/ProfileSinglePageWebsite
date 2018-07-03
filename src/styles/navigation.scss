@@ -17,6 +17,17 @@
       padding-right: 20px;
      font-weight: 900;
      font-size: 24px;
+     position: relative;
+  }
+
+  .logo {
+    position: absolute;
+    z-index:1;
+   float: right;
+   height:100px;;
+   top: 30px;
+   right: 10px;
+   zoom: 0.7;
   }
 
   .dropdownmenu {
@@ -77,5 +88,22 @@
     cursor: pointer;
     }
 
- 
+    @media all and (max-width: 800px) {
+      .logo {
+        top: 40px;
+       zoom: 0.6;
+      
+    }
+    }
+    
+    @media all and (max-width: 600px) {
+      .logo {
+        
+       top: 50px;
+       right: 10px;
+       zoom: 0.5;
+      
+    }
+    }
+    
   
