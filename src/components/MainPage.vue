@@ -112,7 +112,7 @@ methods: {
       getImageStyle: function (project) { 
        var t = project.ratio * this.containerWidth;
           return  {
-          'background-color':'rgb(247, 107, 149)',
+          'background-color':'rgb(255, 255, 255)',
            'max-width': '100%',
            'width': this.containerWidth + 'px',
            'height': t + 'px',
